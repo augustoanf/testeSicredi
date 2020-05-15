@@ -11,7 +11,7 @@ Neste script, a execução realiza os seguintes testes:
 - Valida os valores da chamada são os mesmos apresentados na descrição do teste;
 - Valida se o JSON retornado da chamada atende aos requisitos do schema disponível em src/test/resources/schema.json.
 
-# Teste da GUI
+# Teste da UI
 O BDD foi desenvolvido em Cucumber e o framework utilizado para execução foi o Selenium Webdriver.
 O arquivo que contém o BDD está em src/test/java/TesteGUI/features/TesteSicredi.feature e o
 arquivo que contém o código está em src/test/java/TesteGUI/seleniumgluecode/step_definitions.java
