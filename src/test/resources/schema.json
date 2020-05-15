@@ -1,0 +1,53 @@
+{
+    "required": [
+      "id",
+      "meses",
+      "valor"
+    ],
+    "additionalProperties": true,
+    "properties": {
+      "id": {
+        "$id": "#/properties/id",
+        "type": "integer",
+        "title": "The id value",
+        "description": "The identifier value."
+      },
+      "meses": {
+        "$id": "#/properties/meses",
+        "type": "array",
+        "title": "Months",
+        "description": "Array com a quantidade de meses",
+        "additionalItems": true,
+        "items": {
+          "anyOf": [
+            {
+              "$id": "#/properties/meses/items/anyOf/0",
+              "type": "string",
+              "title": "Amount",
+              "default": ""
+            }
+          ],
+          "$id": "#/properties/meses/items"
+        }
+      },
+      "valor": {
+        "$id": "#/properties/valor",
+        "type": "array",
+        "title": "The valor schema",
+        "description": "Array com o valor.",
+        "default": [],
+        "additionalItems": true,
+        "items": {
+          "anyOf": [
+            {
+              "$id": "#/properties/valor/items/anyOf/0",
+              "type": "string",
+              "title": "Value",
+              "default": ""
+            }
+          ],
+          "$id": "#/properties/valor/items"
+        }
+      }
+    }
+  }
