@@ -1,8 +1,8 @@
-# testeSicredi
+# Teste de Automação
 Este projeto foi desenvolvido para atender ao teste de automação proposto pelo Sicredi.
 
 # Teste da API
-O script com os cenários de teste da API foi desenvolvido em Rest Assured e está disponível em src/test/java/TesteAPI/TesteAPI.java
+O script com os cenários de teste da API foi desenvolvido em Rest Assured e está disponível em src/test/java/TesteAPI/TesteAPI.java.
 Neste script, a execução realiza os seguintes testes:
 - Valida se o código retornado da chamada HTTP é 200;
 - Valida se o retorno da chamada está em formato JSON;
@@ -14,11 +14,13 @@ Neste script, a execução realiza os seguintes testes:
 # Teste da UI
 O BDD foi desenvolvido em Cucumber e o framework utilizado para execução foi o Selenium Webdriver.
 O arquivo que contém o BDD está em src/test/java/TesteGUI/features/TesteSicredi.feature e o
-arquivo que contém o código está em src/test/java/TesteGUI/seleniumgluecode/step_definitions.java
+arquivo que contém o código está em src/test/java/TesteGUI/seleniumgluecode/step_definitions.java.
 A execução foi feita no Google Chrome e os seguintes cenários são executados:
 - Cenário onde o associado preenche com valores válidos e o simulador retorna a tabela com os investimentos;
 - Cenário onde o associado preenche com valores inválidos e o simulador apresenta o aviso em cada campo.
 
 Este projeto foi desenvolvido por:
+
 Antonio Augusto Fornari
+
 anf.augusto@gmail.com
