@@ -48,7 +48,7 @@ public class TesteAPI {
 	@Test
 	public void responseTime() {
 		
-		System.out.println("*** Caso de teste: Validando o retorno da API em tempo menor que 2000ms. ***\n");
+		System.out.println("*** Caso de teste: Validando o retorno da API em tempo menor que 5000ms. ***\n");
 		
 		RestAssured.baseURI = "http://5b847b30db24a100142dce1b.mockapi.io/api/v1/simulador";
 
@@ -57,7 +57,7 @@ public class TesteAPI {
 		Response response = requestSpecification.when()
 			.get();
 
-		Assert.assertFalse("Longer than expected!", (response.getTime() < 2000));
+		Assert.assertTrue("Longer than expected!", (response.getTime() < 5000));
 		
 		System.out.println("\n*** Caso de teste: Fim do teste de retorno em JSON.***");
 	}
