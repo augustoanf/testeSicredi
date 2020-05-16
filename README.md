@@ -1,7 +1,7 @@
 # Teste de Automação
 Este projeto foi desenvolvido para atender ao teste de automação proposto pelo Sicredi.
 
-Teste da API
+# Teste da API
 O script com os cenários de teste da API foi desenvolvido em Rest Assured e está disponível em src/test/java/runner/TesteAPI.java
 Neste script, a execução realiza os seguintes testes:
 - Valida se o código retornado da chamada HTTP é 200;
