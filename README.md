@@ -17,7 +17,7 @@ O BDD foi desenvolvido em Cucumber e o framework utilizado para execução foi o
 O arquivo que contém o BDD está em src/test/java/features/TesteSicredi.feature. <br/>
 O arquivo que contém as funções está em src/test/java/seleniumgluecode/step_definitions.java. <br/>
 Caso seja necessária a substituição do chromedriver, o mesmo está disponível em src/webdriver/chromedriver.exe. <br/>
-A execução foi feita no Google Chrome e os seguintes cenários foram executados:
+A execução foi feita no Google Chrome (Versão 81.0.4044.138) e os seguintes cenários foram executados:
 - Cenário onde o associado preenche com valores válidos e o simulador retorna a tabela com os investimentos;
 - Cenário onde o associado preenche com valores inválidos e o simulador apresenta o aviso em cada campo.
 
