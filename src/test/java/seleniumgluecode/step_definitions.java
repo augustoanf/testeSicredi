@@ -1,4 +1,4 @@
-package TesteGUI.seleniumgluecode;
+package seleniumgluecode;
 
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
@@ -17,42 +17,37 @@ public class step_definitions {
 	private String timeValue = "100";
 
     public static WebDriver driver;
-    @Given("^That I want to simulate a savings investment$")
+    @Given("^Quero simular um investimento na poupança$")
     public void loadPage() throws Throwable {     
     	System.setProperty("webdriver.chrome.driver","./src/webdriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		WebDriverWait wait = new WebDriverWait(driver,10);
-		String title = "Simulador de Investimento - Poupança";
+		String titulo = "Simulador de Investimento - Poupança";
 		String xpath = "//h2[contains(text(),'Simulador de Investimento - Poupança')]";
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/");
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpath),title));
+		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpath),titulo));
     }
     
-    @Then("^I access the simulation form as an associate$")
+    @Then("^Acesso o formulário de simulação como associado$")
     public void associateScroll() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
-		String buttonXpath = "//button[contains(@class,'btn btnAmarelo btnSimular')]";
-		String radioXpath = " //input[@type='radio' and @value='paraVoce']";
-		WebElement button = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(buttonXpath)));
-		WebElement radio = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(radioXpath)));
-		js.executeScript("arguments[0].scrollIntoView(true);",button);
-		radio.click();
+		String xpathBotao = "//button[contains(@class,'btn btnAmarelo btnSimular')]";
+		String xpathAssociado = " //input[@type='radio' and @value='paraVoce']";
+		WebElement botao = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathBotao)));
+		WebElement opcaoAssociado = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathAssociado)));
+		js.executeScript("arguments[0].scrollIntoView(true);",botao);
+		opcaoAssociado.click();
 	}
 	
-	@When("^I fill the form with valid values$")
-    public void fillValidForm() throws Throwable {
+	@When("^Preencho o formulário com valor válido para o campo \"([^\"]*)\" de \"([^\"]*)\"$")
+    public void fillValidForm(String campo, String valor) throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver,10);
-		WebElement applicationValueField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("valorAplicar")));
-		applicationValueField.sendKeys("200000");
-		WebElement investmentValueField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("valorInvestir")));
-		investmentValueField.sendKeys("10000");
-		WebElement timeField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("tempo")));
-		timeField.sendKeys(timeValue);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(campo))).sendKeys(valor);
 	}
 	
-	@Then("^I click to simulate$")
+	@Then("^Clico para simular$")
     public void simulateClick() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		String buttonXpath = "//button[contains(@class,'btn btnAmarelo btnSimular')]";
@@ -61,7 +56,7 @@ public class step_definitions {
 		button.click();
 	}
 
-	@Then("^I see the simulation result form$")
+	@Then("^Vejo a tabela com resultados da simulação$")
     public void resultForm() throws Throwable {
     	WebDriverWait wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("blocoResultadoSimulacao")));
@@ -72,18 +67,13 @@ public class step_definitions {
 		wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//table/*/*/*"), 10));
 	}
 	
-	@When("^I fill the form with invalid values$")
-    public void fillInvalidForm() throws Throwable {
+	@When("^Preencho o formulário com valor inválido para o campo \"([^\"]*)\" de \"([^\"]*)\"$")
+    public void fillInvalidForm(String campo, String valor) throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver,10);
-		WebElement applicationValueField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("valorAplicar")));
-		applicationValueField.sendKeys("200");
-		WebElement investmentValueField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("valorInvestir")));
-		investmentValueField.sendKeys("100");
-		WebElement timeField = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("tempo")));
-		timeField.sendKeys(timeValue);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(campo))).sendKeys(valor);
 	}
 
-	@Then("^I see the invalid values message$")
+	@Then("^Vejo as mensagens que pedem valor válido$")
     public void invalidValuesMessage() throws Throwable {
     	WebDriverWait wait = new WebDriverWait(driver,10);
     	String test_message = "Valor mínimo de 20.00";
@@ -93,7 +83,7 @@ public class step_definitions {
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathInvestmentField),test_message));
     }
     
-    @Then("^I close the browser$")
+    @Then("^Fecho o browser$")
     public void browser_closure() throws Throwable {
     	driver.quit();
     }
