@@ -35,7 +35,7 @@ public class step_definitions {
     }
 	
 	@Then("^Acesso o formulário de simulação como associado$")
-    public void associateScroll() throws Throwable {
+	public void associateScroll() throws Throwable {
 		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		String xpathBotao = "//button[contains(@class,'btn btnAmarelo btnSimular')]";
 		String xpathAssociado = " //input[@type='radio' and @value='paraVoce']";
@@ -46,12 +46,12 @@ public class step_definitions {
 	}
 	
 	@When("^Preencho o formulário com valor válido para o campo \"([^\"]*)\" de \"([^\"]*)\"$")
-    public void fillValidForm(String campo, String valor) throws Throwable {
+	public void fillValidForm(String campo, String valor) throws Throwable {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(campo))).sendKeys(valor);
 	}
 	
 	@Then("^Clico para simular$")
-    public void simulateClick() throws Throwable {
+	public void simulateClick() throws Throwable {
 		String buttonXpath = "//button[contains(@class,'btn btnAmarelo btnSimular')]";
 		WebElement button = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(buttonXpath)));
 		wait.until(ExpectedConditions.elementToBeClickable(button));
@@ -59,7 +59,7 @@ public class step_definitions {
 	}
 
 	@Then("^Vejo a tabela com resultados da simulação para \"([^\"]*)\" meses$")
-    public void resultForm(String tempo) throws Throwable {
+	public void resultForm(String tempo) throws Throwable {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("blocoResultadoSimulacao")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//strong[text()='"+ tempo +" meses']")));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("valor")));
@@ -69,12 +69,12 @@ public class step_definitions {
 	}
 	
 	@When("^Preencho o formulário com valor inválido para o campo \"([^\"]*)\" de \"([^\"]*)\"$")
-    public void fillInvalidForm(String campo, String valor) throws Throwable {
+	public void fillInvalidForm(String campo, String valor) throws Throwable {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(campo))).sendKeys(valor);
 	}
 
 	@Then("^Vejo as mensagens que pedem valor válido$")
-    public void invalidValuesMessage() throws Throwable {
+	public void invalidValuesMessage() throws Throwable {
     	String test_message = "Valor mínimo de 20.00";
 		String xpathApplicationField = "//label[@id='valorAplicar-error']";
 		String xpathInvestmentField = "//label[@id='valorInvestir-error']";
@@ -82,8 +82,8 @@ public class step_definitions {
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathInvestmentField),test_message));
     }
     
-    @Then("^Fecho o browser$")
-    public void browser_closure() throws Throwable {
+	@Then("^Fecho o browser$")
+	public void browser_closure() throws Throwable {
     	driver.quit();
 	}
 
