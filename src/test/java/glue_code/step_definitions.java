@@ -73,12 +73,17 @@ public class step_definitions {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(campo))).sendKeys(valor);
 	}
 
-	@Then("^Vejo as mensagens que pedem valor válido$")
-	public void invalidValuesMessage() throws Throwable {
+	@Then("^Vejo a mensagen que solicita valor válido para aplicação$")
+	public void invalidValuesApplicationMessage() throws Throwable {
     	String test_message = "Valor mínimo de 20.00";
 		String xpathApplicationField = "//label[@id='valorAplicar-error']";
-		String xpathInvestmentField = "//label[@id='valorInvestir-error']";
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathApplicationField),test_message));
+	}
+
+	@Then("^Vejo a mensagen que solicita valor válido para investimento$")
+	public void invalidValuesInvestmentMessage() throws Throwable {
+    	String test_message = "Valor mínimo de 20.00";
+		String xpathInvestmentField = "//label[@id='valorInvestir-error']";
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathInvestmentField),test_message));
 	}
 	

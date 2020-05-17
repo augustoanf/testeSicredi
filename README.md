@@ -23,10 +23,6 @@ A execução foi feita no Google Chrome (Versão 81.0.4044.138) e os seguintes c
 - Cenário onde o associado preenche com valores válidos e o simulador retorna a tabela com os investimentos;
 - Cenário onde o associado preenche com valores inválidos e o simulador apresenta o aviso em cada campo.
 
-# Relatório com resultados dos testes da UI
-A página HTML que mostra o relatório com o resultado dos testes de UI depois da execução está em: <br/>
-target/htmlreports/report.html.
-
 Este projeto foi desenvolvido por: <br/>
 Antonio Augusto Fornari <br/>
 anf.augusto@gmail.com

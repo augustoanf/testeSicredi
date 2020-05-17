@@ -15,4 +15,5 @@ Feature: Simular investimento
       When Preencho o formulário com valor inválido para o campo "valorAplicar" de "1000"
       And Preencho o formulário com valor inválido para o campo "valorInvestir" de "1000"
       And Preencho o formulário com valor inválido para o campo "tempo" de "100"
-      Then Vejo as mensagens que pedem valor válido
+      Then Vejo a mensagen que solicita valor válido para aplicação
+      Then Vejo a mensagen que solicita valor válido para investimento

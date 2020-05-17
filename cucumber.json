@@ -1,0 +1,310 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4475669500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Simulação com valores válidos",
+        "description": "",
+        "id": "simular-investimento;simulação-com-valores-válidos",
+        "after": [
+          {
+            "result": {
+              "duration": 652820900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4635214500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Quero simular um investimento na poupança no portal do Sicredi",
+            "match": {
+              "location": "step_definitions.loadPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107650300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Acesso o formulário de simulação como associado",
+            "match": {
+              "location": "step_definitions.associateScroll()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 83266800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Preencho o formulário com valor válido para o campo \"valorAplicar\" de \"200000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valorAplicar",
+                  "offset": 53
+                },
+                {
+                  "val": "200000",
+                  "offset": 71
+                }
+              ],
+              "location": "step_definitions.fillValidForm(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66572800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Preencho o formulário com valor válido para o campo \"valorInvestir\" de \"10000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valorInvestir",
+                  "offset": 53
+                },
+                {
+                  "val": "10000",
+                  "offset": 72
+                }
+              ],
+              "location": "step_definitions.fillValidForm(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72190300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Preencho o formulário com valor válido para o campo \"tempo\" de \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tempo",
+                  "offset": 53
+                },
+                {
+                  "val": "100",
+                  "offset": 64
+                }
+              ],
+              "location": "step_definitions.fillValidForm(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80152500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Clico para simular",
+            "match": {
+              "location": "step_definitions.simulateClick()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 651764300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Vejo a tabela com resultados da simulação para \"100\" meses",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 48
+                }
+              ],
+              "location": "step_definitions.resultForm(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3234166300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.beforeScenario()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Simulação com valores inválidos",
+        "description": "",
+        "id": "simular-investimento;simulação-com-valores-inválidos",
+        "after": [
+          {
+            "result": {
+              "duration": 587873400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3286519200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Quero simular um investimento na poupança no portal do Sicredi",
+            "match": {
+              "location": "step_definitions.loadPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135148700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Acesso o formulário de simulação como associado",
+            "match": {
+              "location": "step_definitions.associateScroll()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62315700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Preencho o formulário com valor inválido para o campo \"valorAplicar\" de \"1000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valorAplicar",
+                  "offset": 55
+                },
+                {
+                  "val": "1000",
+                  "offset": 73
+                }
+              ],
+              "location": "step_definitions.fillInvalidForm(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80968100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Preencho o formulário com valor inválido para o campo \"valorInvestir\" de \"1000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valorInvestir",
+                  "offset": 55
+                },
+                {
+                  "val": "1000",
+                  "offset": 74
+                }
+              ],
+              "location": "step_definitions.fillInvalidForm(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64811200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Preencho o formulário com valor inválido para o campo \"tempo\" de \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tempo",
+                  "offset": 55
+                },
+                {
+                  "val": "100",
+                  "offset": 66
+                }
+              ],
+              "location": "step_definitions.fillInvalidForm(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20985600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Vejo a mensagen que solicita valor válido para aplicação",
+            "match": {
+              "location": "step_definitions.invalidValuesApplicationMessage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21020200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Vejo a mensagen que solicita valor válido para investimento",
+            "match": {
+              "location": "step_definitions.invalidValuesInvestmentMessage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Simular investimento",
+    "description": "",
+    "id": "simular-investimento",
+    "keyword": "Feature",
+    "uri": "scenarios.feature"
+  }
+]

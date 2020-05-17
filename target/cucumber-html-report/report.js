@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4381925700,
+  "duration": 4475669500,
   "status": "passed"
 });
 formatter.scenario({
@@ -57,14 +57,14 @@ formatter.match({
   "location": "step_definitions.loadPage()"
 });
 formatter.result({
-  "duration": 1947484600,
+  "duration": 4635214500,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.associateScroll()"
 });
 formatter.result({
-  "duration": 109700400,
+  "duration": 107650300,
   "status": "passed"
 });
 formatter.match({
@@ -81,7 +81,7 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 103095300,
+  "duration": 83266800,
   "status": "passed"
 });
 formatter.match({
@@ -98,7 +98,7 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 66181000,
+  "duration": 66572800,
   "status": "passed"
 });
 formatter.match({
@@ -115,14 +115,14 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 65555800,
+  "duration": 72190300,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.simulateClick()"
 });
 formatter.result({
-  "duration": 92331600,
+  "duration": 80152500,
   "status": "passed"
 });
 formatter.match({
@@ -135,15 +135,15 @@ formatter.match({
   "location": "step_definitions.resultForm(String)"
 });
 formatter.result({
-  "duration": 671707500,
+  "duration": 651764300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 728302300,
+  "duration": 652820900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3247378300,
+  "duration": 3234166300,
   "status": "passed"
 });
 formatter.scenario({
@@ -181,21 +181,26 @@ formatter.step({
 });
 formatter.step({
   "line": 18,
-  "name": "Vejo as mensagens que pedem valor válido",
+  "name": "Vejo a mensagen que solicita valor válido para aplicação",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "Vejo a mensagen que solicita valor válido para investimento",
   "keyword": "Then "
 });
 formatter.match({
   "location": "step_definitions.loadPage()"
 });
 formatter.result({
-  "duration": 6903631900,
+  "duration": 3286519200,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.associateScroll()"
 });
 formatter.result({
-  "duration": 128264400,
+  "duration": 135148700,
   "status": "passed"
 });
 formatter.match({
@@ -212,7 +217,7 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 66856800,
+  "duration": 62315700,
   "status": "passed"
 });
 formatter.match({
@@ -229,7 +234,7 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 69954400,
+  "duration": 80968100,
   "status": "passed"
 });
 formatter.match({
@@ -246,18 +251,25 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 66477400,
+  "duration": 64811200,
   "status": "passed"
 });
 formatter.match({
-  "location": "step_definitions.invalidValuesMessage()"
+  "location": "step_definitions.invalidValuesApplicationMessage()"
 });
 formatter.result({
-  "duration": 47401100,
+  "duration": 20985600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "step_definitions.invalidValuesInvestmentMessage()"
+});
+formatter.result({
+  "duration": 21020200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 626990500,
+  "duration": 587873400,
   "status": "passed"
 });
 });
