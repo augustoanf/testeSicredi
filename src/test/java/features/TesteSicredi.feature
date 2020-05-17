@@ -8,7 +8,6 @@ Feature: Simular investimento
       And Preencho o formulário com valor válido para o campo "tempo" de "100"
       And Clico para simular
       Then Vejo a tabela com resultados da simulação para "100" meses
-      Then Fecho o browser
    
    Scenario: Simulação com valores inválidos
       Given Quero simular um investimento na poupança no portal do Sicredi
@@ -17,4 +16,3 @@ Feature: Simular investimento
       And Preencho o formulário com valor inválido para o campo "valorInvestir" de "1000"
       And Preencho o formulário com valor inválido para o campo "tempo" de "100"
       Then Vejo as mensagens que pedem valor válido
-      Then Fecho o browser

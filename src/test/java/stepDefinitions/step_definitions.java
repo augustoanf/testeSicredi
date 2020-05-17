@@ -81,11 +81,6 @@ public class step_definitions {
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathApplicationField),test_message));
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathInvestmentField),test_message));
     }
-    
-	@Then("^Fecho o browser$")
-	public void browser_closure() throws Throwable {
-    	driver.quit();
-	}
 
 	@After
 	public void afterScenario() {
