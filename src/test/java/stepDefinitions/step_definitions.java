@@ -32,7 +32,7 @@ public class step_definitions {
 		String xpath = "//h2[contains(text(),'Simulador de Investimento - Poupança')]";
 		driver.get("https://www.sicredi.com.br/html/ferramenta/simulador-investimento-poupanca/");
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpath),titulo));
-    }
+	}
 	
 	@Then("^Acesso o formulário de simulação como associado$")
 	public void associateScroll() throws Throwable {
@@ -80,8 +80,8 @@ public class step_definitions {
 		String xpathInvestmentField = "//label[@id='valorInvestir-error']";
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathApplicationField),test_message));
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.xpath(xpathInvestmentField),test_message));
-    }
-
+	}
+	
 	@After
 	public void afterScenario() {
 		driver.quit();
