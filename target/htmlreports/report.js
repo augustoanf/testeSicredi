@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("TesteSicredi.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("scenarios.feature");
 formatter.feature({
   "line": 1,
   "name": "Simular investimento",
@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4541494500,
+  "duration": 4478769900,
   "status": "passed"
 });
 formatter.scenario({
@@ -57,14 +57,14 @@ formatter.match({
   "location": "step_definitions.loadPage()"
 });
 formatter.result({
-  "duration": 2264547200,
+  "duration": 932519300,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.associateScroll()"
 });
 formatter.result({
-  "duration": 117779700,
+  "duration": 113403100,
   "status": "passed"
 });
 formatter.match({
@@ -81,7 +81,7 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 105446900,
+  "duration": 99641300,
   "status": "passed"
 });
 formatter.match({
@@ -98,7 +98,7 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 93049200,
+  "duration": 72100700,
   "status": "passed"
 });
 formatter.match({
@@ -115,14 +115,14 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 73170300,
+  "duration": 70018300,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.simulateClick()"
 });
 formatter.result({
-  "duration": 83315900,
+  "duration": 96643200,
   "status": "passed"
 });
 formatter.match({
@@ -135,15 +135,15 @@ formatter.match({
   "location": "step_definitions.resultForm(String)"
 });
 formatter.result({
-  "duration": 683566300,
+  "duration": 656404500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 633374900,
+  "duration": 629034300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3167962800,
+  "duration": 3161226800,
   "status": "passed"
 });
 formatter.scenario({
@@ -188,14 +188,14 @@ formatter.match({
   "location": "step_definitions.loadPage()"
 });
 formatter.result({
-  "duration": 3281887300,
+  "duration": 1708893300,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.associateScroll()"
 });
 formatter.result({
-  "duration": 111351100,
+  "duration": 117827700,
   "status": "passed"
 });
 formatter.match({
@@ -212,7 +212,7 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 73042700,
+  "duration": 70368400,
   "status": "passed"
 });
 formatter.match({
@@ -229,7 +229,7 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 71892700,
+  "duration": 80865700,
   "status": "passed"
 });
 formatter.match({
@@ -246,18 +246,18 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 67648800,
+  "duration": 89563000,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.invalidValuesMessage()"
 });
 formatter.result({
-  "duration": 44931800,
+  "duration": 44351400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 617524200,
+  "duration": 1099658600,
   "status": "passed"
 });
 });

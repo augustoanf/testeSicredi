@@ -3,7 +3,7 @@ Este projeto foi desenvolvido para atender ao teste de automação proposto pelo
 
 # Teste da API
 O script com os cenários de teste da API foi desenvolvido em Rest Assured e está disponível no caminho: <br/>
-src/test/java/runner/TesteAPI.java. <br/>
+src/test/java/runners/Teste_API.java. <br/>
 Neste script, a execução realiza os seguintes testes:
 - Valida se o código retornado da chamada HTTP é 200;
 - Valida se o retorno da chamada está em formato JSON;
@@ -14,8 +14,9 @@ Neste script, a execução realiza os seguintes testes:
 
 # Teste da UI
 O BDD foi desenvolvido em Cucumber e o framework utilizado para execução foi o Selenium Webdriver. <br/>
-O arquivo que contém o BDD está em src/test/java/features/TesteSicredi.feature. <br/>
-O arquivo que contém as funções está em src/test/java/seleniumgluecode/step_definitions.java. <br/>
+O arquivo que contém o BDD está em src/test/java/features/scenarios.feature. <br/>
+O arquivo que contém as funções está em src/test/java/glue_code/step_definitions.java. <br/>
+O arquivo que executa os cenários está em src/test/java/runners/Teste_GUI.java. <br/>
 Caso seja necessária a substituição do chromedriver, o mesmo está disponível em src/webdriver/chromedriver.exe. <br/>
 A execução foi feita no Google Chrome (Versão 81.0.4044.138) e os seguintes cenários foram executados:
 - Cenário onde o associado preenche com valores válidos e o simulador retorna a tabela com os investimentos;

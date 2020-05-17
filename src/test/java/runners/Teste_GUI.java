@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 	features = "src/test/java/features",
 	plugin = {"pretty", "html:target/htmlreports"},
-	glue= {"stepDefinitions"}
+	glue= {"glue_code"}
 )
 
 public class Teste_GUI {
