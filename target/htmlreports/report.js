@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4375403800,
+  "duration": 4541494500,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,23 +53,18 @@ formatter.step({
   "name": "Vejo a tabela com resultados da simulação para \"100\" meses",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 11,
-  "name": "Fecho o browser",
-  "keyword": "Then "
-});
 formatter.match({
   "location": "step_definitions.loadPage()"
 });
 formatter.result({
-  "duration": 1962742500,
+  "duration": 2264547200,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.associateScroll()"
 });
 formatter.result({
-  "duration": 115222000,
+  "duration": 117779700,
   "status": "passed"
 });
 formatter.match({
@@ -86,7 +81,7 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 81485700,
+  "duration": 105446900,
   "status": "passed"
 });
 formatter.match({
@@ -103,7 +98,7 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 67082800,
+  "duration": 93049200,
   "status": "passed"
 });
 formatter.match({
@@ -120,14 +115,14 @@ formatter.match({
   "location": "step_definitions.fillValidForm(String,String)"
 });
 formatter.result({
-  "duration": 63749000,
+  "duration": 73170300,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.simulateClick()"
 });
 formatter.result({
-  "duration": 111847800,
+  "duration": 83315900,
   "status": "passed"
 });
 formatter.match({
@@ -140,26 +135,19 @@ formatter.match({
   "location": "step_definitions.resultForm(String)"
 });
 formatter.result({
-  "duration": 662336900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "step_definitions.browser_closure()"
-});
-formatter.result({
-  "duration": 644852800,
+  "duration": 683566300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23900,
+  "duration": 633374900,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3174107300,
+  "duration": 3167962800,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 12,
   "name": "Simulação com valores inválidos",
   "description": "",
   "id": "simular-investimento;simulação-com-valores-inválidos",
@@ -167,52 +155,47 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "Quero simular um investimento na poupança no portal do Sicredi",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "Acesso o formulário de simulação como associado",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "Preencho o formulário com valor inválido para o campo \"valorAplicar\" de \"1000\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "Preencho o formulário com valor inválido para o campo \"valorInvestir\" de \"1000\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "Preencho o formulário com valor inválido para o campo \"tempo\" de \"100\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "Vejo as mensagens que pedem valor válido",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "Fecho o browser",
   "keyword": "Then "
 });
 formatter.match({
   "location": "step_definitions.loadPage()"
 });
 formatter.result({
-  "duration": 784064000,
+  "duration": 3281887300,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.associateScroll()"
 });
 formatter.result({
-  "duration": 127364900,
+  "duration": 111351100,
   "status": "passed"
 });
 formatter.match({
@@ -229,7 +212,7 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 95586900,
+  "duration": 73042700,
   "status": "passed"
 });
 formatter.match({
@@ -246,7 +229,7 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 86161500,
+  "duration": 71892700,
   "status": "passed"
 });
 formatter.match({
@@ -263,25 +246,18 @@ formatter.match({
   "location": "step_definitions.fillInvalidForm(String,String)"
 });
 formatter.result({
-  "duration": 77252200,
+  "duration": 67648800,
   "status": "passed"
 });
 formatter.match({
   "location": "step_definitions.invalidValuesMessage()"
 });
 formatter.result({
-  "duration": 49538300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "step_definitions.browser_closure()"
-});
-formatter.result({
-  "duration": 649064700,
+  "duration": 44931800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22500,
+  "duration": 617524200,
   "status": "passed"
 });
 });
