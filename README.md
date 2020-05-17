@@ -1,8 +1,9 @@
 # Teste de Automação
-Este projeto foi desenvolvido para atender ao teste de automação proposto pelo Sicredi.
+Este projeto foi desenvolvido para atender ao teste de automação proposto pelo Sicredi. <br/>
+O desenvolvimento foi feito em um projeto Maven em Java.
 
 # Teste da API
-O script com os cenários de teste da API foi desenvolvido em Rest Assured e está disponível no caminho: <br/>
+O script com os cenários de teste da API foi desenvolvido em Rest Assured (Versão 3.3.0) e está disponível no caminho: <br/>
 src/test/java/runners/Teste_API.java. <br/>
 Neste script, a execução realiza os seguintes testes:
 - Valida se o código retornado da chamada HTTP é 200;
@@ -13,14 +14,18 @@ Neste script, a execução realiza os seguintes testes:
 - Valida se o JSON retornado da chamada atende aos requisitos do schema disponível em src/test/resources/schema.json.
 
 # Teste da UI
-O BDD foi desenvolvido em Cucumber e o framework utilizado para execução foi o Selenium Webdriver. <br/>
+O BDD foi desenvolvido em Cucumber (Versão 1.2.5) e o framework utilizado para execução foi o Selenium (Versão 3.7.1). <br/>
 O arquivo que contém o BDD está em src/test/java/features/scenarios.feature. <br/>
 O arquivo que contém as funções está em src/test/java/glue_code/step_definitions.java. <br/>
 O arquivo que executa os cenários está em src/test/java/runners/Teste_GUI.java. <br/>
-Caso seja necessária a substituição do chromedriver, o mesmo está disponível em src/webdriver/chromedriver.exe. <br/>
+Caso seja necessária a substituição do ch romedriver, o mesmo está disponível em src/webdriver/chromedriver.exe. <br/>
 A execução foi feita no Google Chrome (Versão 81.0.4044.138) e os seguintes cenários foram executados:
 - Cenário onde o associado preenche com valores válidos e o simulador retorna a tabela com os investimentos;
 - Cenário onde o associado preenche com valores inválidos e o simulador apresenta o aviso em cada campo.
+
+# Relatório com resultados dos testes da UI
+A página HTML que mostra o relatório com o resultado dos testes de UI depois da execução está em: <br/>
+target/htmlreports/report.html.
 
 Este projeto foi desenvolvido por: <br/>
 Antonio Augusto Fornari <br/>
