@@ -71,9 +71,9 @@ public class Teste_API {
 		valor.add("3.174");
 		valor.add("3.564");
 		valor.add("3.971");
-		Assert.assertEquals(response.jsonPath().get("id"),1);
-		Assert.assertEquals(response.jsonPath().get("meses"),meses);
-		Assert.assertEquals(response.jsonPath().get("valor"),valor);
+		Assert.assertTrue(response.jsonPath().get("id").equals(1));
+		Assert.assertTrue(response.jsonPath().get("meses").equals(meses));
+		Assert.assertTrue(response.jsonPath().get("valor").equals(valor));
 		System.out.println("-- Caso de teste: Fim do teste de retorno da API com os valores. --\n");
 	}
 
