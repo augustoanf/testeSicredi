@@ -1,6 +1,6 @@
 # Teste de Automação
 Este projeto foi desenvolvido para atender ao teste de automação proposto pelo Sicredi. <br/>
-O desenvolvimento foi feito em um projeto Maven em Java.
+O desenvolvimento foi feito em um projeto Maven (Versão 3.6.3) em Java (Versão 1.8.0).
 
 # Teste da API
 O script com os cenários de teste da API foi desenvolvido em Rest Assured (Versão 3.3.0) e está disponível no caminho: <br/>
