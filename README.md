@@ -10,7 +10,7 @@ Neste script, a execução realiza os seguintes testes:
 - Valida se o retorno da chamada está em formato JSON;
 - Valida se o retorno da chamada ocorre em menos de 5000ms;
 - Valida se o retorno da chamada não apresenta erros;
-- Valida os valores da chamada são os mesmos apresentados na descrição do teste;
+- Valida se os valores da chamada são os mesmos apresentados na descrição do teste;
 - Valida se o JSON retornado da chamada atende aos requisitos do schema disponível em src/test/resources/schema.json.
 
 # Teste da UI
